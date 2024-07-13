@@ -12,7 +12,5 @@ services:
         max-size: "50m" 
     environment:
       - NODE_ENV=${NODE_ENV}
-    volumes:
-    - ./:/app
     ports:
       - "3000:3000"
