@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --header-height: 72px;
+}
+
+:root, .light-theme {
+    --button-outlined-secondary-color: #141117;
+    --button-outlined-secondary-border-color: #DADAEB;
+    --button-outlined-secondary-hover-background: #F7F7FD;
+    --button-outlined-secondary-active-background: #F2F2FB;
+    --button-outlined-secondary-disabled-border-color: #DADAEB;
+}
+
+.dark-theme {
+    --button-outlined-secondary-color: #FFFFFF;
+    --button-outlined-secondary-border-color: #4F4756;
+    --button-outlined-secondary-hover-background: #4F4756;
+    --button-outlined-secondary-active-background: #302935;
+    --button-outlined-secondary-disabled-border-color: #4F4756;
+}
+
+.desktop-only {
+    display: none!important;
+}
+
+.layout--aml {
+    --btn-old-primary-gradient-background: linear-gradient( 90deg, #553fd9 0%, #5391ef 100% );
+    --btn-old-primary-gradient-hover-background: linear-gradient( 90deg, #6952f5 0%, #69a5ff 100% );
+    --btn-old-primary-gradient-active-background: linear-gradient( 90deg, #7d68ff 0%, #7db1ff 100% );
+    --faq-block-description-color: #BCBFE9;
+    --faq-accordion-item-background: #12101d;
+    --faq-accordion-item-color: #BCBFE9;
+    --product-color: #bb5fb3;
+    --select-active-chevron-color: #BA95FD;
+    --select-option-active-color: #BA95FD;
+    --select-option-selected-color: #BA95FD;
+    --accordion-item-expanded-chevron-color: #BA95FD;
+}
+
+.page--aml {
+    padding-top: var(--header-height);
+}
+
+.app-header {
+    --container-max-width: 1440px;
+    --container-padding: 0 24px;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-radius: var(--header-border-radius, 0 0 24px 24px);
+    background: rgba(26,23,31,.9);
+    border-bottom: 1px solid #3a3142;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1020;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-max-width, 1248px);
+    margin: 0 auto;
+    padding: var(--container-padding, 0 24px);
+    position: relative;
+}
+
+.app-header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--header-height);
+}
+
+.app-header__logo {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 24px;
+}
+
+.app-header__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: 24px;
+}
+
+.app-header__actions {
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+}
+
+body .ui-button, body .ui-input, body .ui-textarea, body .ui-select, body .ui-select-option, body .ui-badge, body .ui-pagination, body .ui-switcher, body .ui-switcher-option, body .simple-table {
+    
+}
+
+.ui-button--outlined_secondary {
+    --button-color: var(--button-outlined-secondary-color);
+    --button-border-color: var(--button-outlined-secondary-border-color);
+    --button-hover-background: var(--button-outlined-secondary-hover-background);
+    --button-active-background: var(--button-outlined-secondary-active-background);
+    --button-disabled-border-color: var(--button-outlined-secondary-disabled-border-color);
+}
+
+.ui-button--small {
+    --button-font-size: 12px;
+    --button-font-weight: 600;
+    --button-line-height: 17px;
+    --icon-size: 16px;
+    --button-padding: 6.5px 15px;
+    --button-height: 32px;
+    --button-border-radius: 12px;
+    --button-icon-fill-padding: -4px;
+}
+
+.ui-button {
+    font-size: var(--button-font-size, 14px);
+    font-weight: var(--button-font-weight, 600);
+    line-height: var(--button-line-height, 20px);
+    --button-icon-fill-padding: -8px;
+    --spinner-size: var(--icon-size);
+    --coin-size: var(--icon-size, 20px);
+    display: inline-flex;
+    align-items: var(--button-align-items, center);
+    justify-content: var(--button-justify-content, center);
+    position: relative;
+    cursor: pointer;
+    padding: var(--button-padding, 9px 23px);
+    background: var(--button-background, transparent);
+    color: var(--button-color, inherit);
+    border-radius: var(--button-border-radius, 16px);
+    width: var(--button-width, unset);
+    height: var(--button-height, 40px);
+    min-width: var(--button-min-width, unset);
+    min-height: var(--button-min-height, unset);
+    border: 1px solid var(--button-border-color, transparent);
+    white-space: nowrap;
+    transition: .2s ease-out;
+    transition-property: background-color,box-shadow,border-color,color,opacity;
+    box-shadow: var(--button-box-shadow);
+}
+

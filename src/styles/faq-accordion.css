@@ -1,0 +1,43 @@
+.faq-accordion[data-v-7928ea3e] {
+    --accordion-item-font-size: 16px;
+    --accordion-item-font-weight: 700;
+    --accordion-item-line-height: 18px;
+    --icon-size: 16px;
+    --accordion-item-transition-duration: .15s;
+    --accordion-item-title-padding: 10px 16px 10px 24px;
+    --accordion-item-expanded-chevron-color: #fff;
+    --accordion-item-chevron-padding: 8px;
+    --accordion-item-chevron-border-radius: 12px;
+    --accordion-item-chevron-transition-duration: .15s;
+    --accordion-item-chevron-transform: rotate(270deg);
+    --accordion-item-chevron-active: rotateZ(90deg);
+    text-align: left
+}
+
+.faq-accordion__item[data-v-7928ea3e] {
+    background: var(--faq-accordion-item-background, #0e101f);
+    border-radius: 16px
+}
+
+.faq-accordion__item[data-v-7928ea3e]:not(:last-child) {
+    margin-bottom: 12px
+}
+
+.faq-accordion__item[data-v-7928ea3e]:hover {
+    --accordion-item-chevron-background: var( --faq-accordion-item-chevron-background, #1f2130 )
+}
+
+.faq-accordion__item-content[data-v-7928ea3e] {
+    color: var(--faq-accordion-item-color, rgba(255, 255, 255, .7));
+    padding: 0 16px 20px 24px
+}
+
+.faq-accordion__item-content[data-v-7928ea3e] ul {
+    padding-left: 1em;
+    margin: 0
+}
+
+.faq-accordion__item-content[data-v-7928ea3e] a {
+    text-decoration: underline;
+    text-underline-offset: 2px
+}

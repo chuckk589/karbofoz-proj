@@ -1,0 +1,42 @@
+.layout--default {
+    --product-color: #15adbc
+}
+
+.app-header {
+    --navigation-link-white-space: nowrap
+}
+
+.app-header__account-details {
+    --dropdown-content-max-height: auto;
+    --dropdown-content-width: max-content;
+    --dropdown-content-padding: 24px;
+    --dropdown-content-background: #211C25
+}
+
+.app-header__old-version-btn {
+    --icon-size: 12px;
+    --button-height: 20px;
+    --button-padding: 2px 8px;
+    margin-right: 12px;
+    --button-background: #302935;
+    --button-icon-fill-padding: 0
+}
+
+@media (max-width: 1279px) {
+    .app-header__old-version-btn {
+        font-size:12px;
+        line-height: 16px
+    }
+}
+
+.app-header__login-btn,.app-header__profile-btn {
+    margin-right: 16px
+}
+
+.account-sidebar {
+    --sidebar-background: #000212
+}
+
+.main-block[data-v-cf9aaafd] {
+    min-height: 100vh
+}

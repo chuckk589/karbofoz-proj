@@ -1,0 +1,44 @@
+.partner-link[data-v-0bdfac7b] {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    max-width: 164px;
+    justify-self: center
+}
+
+.partner-link:hover .partner-link__image[data-v-0bdfac7b],.partner-link:focus .partner-link__image[data-v-0bdfac7b] {
+    opacity: 1
+}
+
+.partner-link:hover .partner-link__image--mono[data-v-0bdfac7b],.partner-link:focus .partner-link__image--mono[data-v-0bdfac7b] {
+    opacity: .75
+}
+
+.partner-link__image[data-v-0bdfac7b],.partner-link__image--mono[data-v-0bdfac7b] {
+    transition: opacity .2s ease-out;
+    height: 100%;
+    width: 100%
+}
+
+.partner-link__image[data-v-0bdfac7b] {
+    opacity: 0
+}
+
+.partner-link__image--mono[data-v-0bdfac7b] {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1
+}
+
+.partner-link__image--mono.is-white[data-v-0bdfac7b] {
+    filter: brightness(5)
+}
+
+.partner-link__image--mono.is-gray[data-v-0bdfac7b] {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(16%) saturate(335%) hue-rotate(227deg) brightness(93%) contrast(89%)
+}

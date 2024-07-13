@@ -1,0 +1,48 @@
+.layout--aml {
+    --btn-old-primary-gradient-background: linear-gradient( 90deg, #553fd9 0%, #5391ef 100% );
+    --btn-old-primary-gradient-hover-background: linear-gradient( 90deg, #6952f5 0%, #69a5ff 100% );
+    --btn-old-primary-gradient-active-background: linear-gradient( 90deg, #7d68ff 0%, #7db1ff 100% );
+    --faq-block-description-color: #BCBFE9;
+    --faq-accordion-item-background: #12101d;
+    --faq-accordion-item-color: #BCBFE9;
+    --product-color: #bb5fb3;
+    --select-active-chevron-color: #BA95FD;
+    --select-option-active-color: #BA95FD;
+    --select-option-selected-color: #BA95FD;
+    --accordion-item-expanded-chevron-color: #BA95FD
+}
+
+.app-header {
+    --navigation-link-white-space: nowrap
+}
+
+.app-header__account-details {
+    --dropdown-content-max-height: auto;
+    --dropdown-content-width: max-content;
+    --dropdown-content-padding: 24px;
+    --dropdown-content-background: #211C25
+}
+
+.app-header__old-version-btn {
+    --icon-size: 12px;
+    --button-height: 20px;
+    --button-padding: 2px 8px;
+    margin-right: 12px;
+    --button-background: #302935;
+    --button-icon-fill-padding: 0
+}
+
+@media (max-width: 1279px) {
+    .app-header__old-version-btn {
+        font-size:12px;
+        line-height: 16px
+    }
+}
+
+.app-header__login-btn,.app-header__profile-btn {
+    margin-right: 16px
+}
+
+.account-sidebar {
+    --sidebar-background: #000212
+}
